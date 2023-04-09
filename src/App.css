@@ -59,7 +59,7 @@
 }
 
 .main-content {
-  background-color: #0e2332;
+  background: linear-gradient(to bottom, #0e2332, black);
   color: white;
   padding: 0px;
   font-size: 18px;
@@ -73,6 +73,7 @@
   
 }
 
+
 .main-content h1 {
   margin-bottom: 16px;
   font-size: 50px;
@@ -81,7 +82,8 @@
 
 .main-content p {
   font-size: 40px;
-  display: inline-flex;
+  min-height: 60px;
+  display:inline-block;
   margin-bottom: 16px;
   border-right: 2px solid #fff;
   white-space: nowrap;

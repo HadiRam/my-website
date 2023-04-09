@@ -65,11 +65,12 @@
   font-size: 18px;
   line-height: 1.5;
   text-align: center;
-  height: calc(100vh - 10vh); /* subtract the height of the header */
+  height: calc(200vh - 10vh); /* subtract the height of the header */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: top;
+  
   
 }
 
@@ -92,6 +93,8 @@
   animation: typing 4s steps(40, end),
              blink-caret .75s step-end infinite;
 }
+
+
 
 
 

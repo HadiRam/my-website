@@ -7,7 +7,9 @@ import downArrow from './down-arrow.svg';
 import './App.css';
 import './navBar.css';
 import './buttonAnimations.css';
+import './cardGrid.css';
 import { type, erase } from './typingEffect'; // import the functions from typingEffect.js
+
 
 
 function App() {
@@ -15,7 +17,10 @@ function App() {
     type();
   }, []);
 
+
   return (
+
+
     <div className="App">
 
       <header className="App-header">
@@ -42,12 +47,11 @@ function App() {
 
       <div className="main-content">
         <h1>I am a passionate: </h1> <p id="typing-text"></p>
-        <h2 style={{ marginTop: 250 }}>View My Projects </h2>
+        <h2 style={{ marginTop: 100 }}>View My Projects </h2>
 
-        <img src={downArrow} style={{ cursor: 'pointer' }} alt="scroll down" width="80" height="80" onClick={() => {
+        <img src={downArrow} style={{ cursor: 'pointer', marginTop: 70 }} alt="scroll down" width="80" height="80" onClick={() => {
           window.scrollTo({ top: window.innerHeight, behavior: 'smooth' });
         }} className='down-arrow' />
-
 
         <div class="card-grid">
           <div class="card">
@@ -63,10 +67,17 @@ function App() {
 
         </div>
 
-
-
-
       </div>
+
+
+
+
+
+
+
+
+
+
 
 
 

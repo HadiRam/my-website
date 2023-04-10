@@ -65,11 +65,11 @@
   font-size: 18px;
   line-height: 1.5;
   text-align: center;
-  height: calc(200vh - 10vh); /* subtract the height of the header */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: top;
+  height:auto;
   
   
 }

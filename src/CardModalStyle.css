@@ -10,14 +10,7 @@
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-.modal p {
-    display: block;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: 0;
-    margin-right: 0;
-    animation:none;
-}
+
 
 .modal-content {
     background-color: #030338;

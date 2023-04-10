@@ -5,20 +5,20 @@
   justify-content: center;
   margin: 2rem auto;
   max-width: 100%;
-  overflow-x: auto; /* added to enable horizontal scrolling on small screens */
+ 
 }
 
 .card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  border: 3px solid #ccc;
+  border-radius: 7px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
   padding: 1rem;
   transition: transform 0.2s ease-in-out;
   cursor: pointer;
-  max-width: 250px; /* added to limit the width of the card */
+  max-width: 1000px; /* added to limit the width of the card */
 }
   
   .card:hover {

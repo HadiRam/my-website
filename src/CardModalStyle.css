@@ -13,15 +13,20 @@
 
 
 .modal-content {
-    background-color: #030338;
+    background-color: #000000;
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
-    max-width: 600px;
+    min-height:300px;
+    max-width: 1000px;
     text-align: center;
     position: relative;
 }
+
+.modal-content p {
+    white-space: pre-line;
+  }
 
 .close {
     position: absolute;

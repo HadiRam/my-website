@@ -1,6 +1,6 @@
 import React from 'react';
 
-function CardModal({ onClose, cardTitle, cardText }) {
+function CardModal({ onClose, cardTitle, cardText, link }) {
   return (
     <div className="modal">
       <div className="modal-content">

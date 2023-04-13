@@ -20,6 +20,7 @@ function App() {
   const [isModal1Open, setIsModal1Open] = useState(false);
   const [isModal2Open, setIsModal2Open] = useState(false);
   const [isModal3Open, setIsModal3Open] = useState(false);
+  const [isModal4Open, setIsModal4Open] = useState(false);
 
 
   const handleCard1Click = () => {
@@ -34,10 +35,15 @@ function App() {
     setIsModal3Open(true);
   };
 
+  const handleCard4Click = () => {
+    setIsModal4Open(true);
+  };
+
   const handleCloseModal = () => {
     setIsModal1Open(false);
     setIsModal2Open(false);
     setIsModal3Open(false);
+    setIsModal4Open(false);
   };
 
   useEffect(() => {
@@ -73,12 +79,17 @@ function App() {
       </nav>
 
       <div className="main-content">
+
         <h1>I am a passionate: </h1> <p2 id="typing-text"></p2>
         <h2 style={{ marginTop: 100 }}>View My Projects </h2>
 
-        <img src={downArrow} style={{ cursor: 'pointer', marginTop: 70 }} alt="scroll down" width="80" height="80" onClick={() => {
-          window.scrollTo({ top: window.innerHeight, behavior: 'smooth' });
+        <img src={downArrow} style={{ cursor: 'pointer', marginTop: 70, marginBottom: 250 }} alt="scroll down" width="80" height="90" onClick={() => {
+          window.scrollTo({ top: 1200, behavior: 'smooth' });
         }} className='down-arrow' />
+
+
+
+  
 
         <div class="card-grid" style={{ marginTop: 200 }}>
 
@@ -100,9 +111,9 @@ function App() {
 
           </div>
 
-          <div class="card">
-            <img src="path/to/image.jpg" alt="Card Image" />
-            <h3>Card Title</h3>
+          <div class="card" onClick={handleCard4Click}>
+            <img src="music.png" alt="Card Image" />
+            <h3>Instruments and Visualizers - React Application</h3>
           </div>
 
           {isModal1Open && (
@@ -150,7 +161,22 @@ function App() {
               } />
           )}
 
+          {isModal4Open && (
+            <CardModal
+              onClose={handleCloseModal}
+              cardTitle="Instruments and Visualizers - React Application"
+              cardText={<div class="field-items">
+                - Within a team of 4, developed and implemented a unique musical instrument component and its accompanying music visualizer using React, CSS, and TypeScript.
+                <br></br> <br></br>
+                - Contributed to the server-side playlist database by adding meta-data for songs, albums, and artists, ensuring songs were playable with any instrument or visualizer.<br></br><br></br>
+              </div>
+              } />
+          )}
+
+
+          
         </div>
+        <h2>Contact Me: <a href="mailto:hadiramlaoui@gmail.com" target="_blank">hadiramlaoui@gmail.com</a></h2>
 
       </div>
 

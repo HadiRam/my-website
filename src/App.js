@@ -58,7 +58,7 @@ function App() {
 
       <header className="App-header">
 
-        <p className="flashy-text">
+        <p>
           Hello there, <br /> my name is Hadi.
         </p>
 
